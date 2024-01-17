@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { wordData } from "../data/imgSrcData.js";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -9,7 +10,7 @@ import Layout from "../layouts/Layout.astro";
       <div>
         <div class="box-about w-fit h-fit mx-auto p-2">
           <img
-            src="../../public/Work/job.png"
+            src={wordData[0]}
             class="img-work"
             alt="work job"
           />
