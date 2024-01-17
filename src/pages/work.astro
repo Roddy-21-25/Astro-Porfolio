@@ -1,0 +1,88 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <h1 class="text-center text-4xl font-bold mt-6 mb-6">Work Experience</h1>
+    <div class="grid grid-cols-1 xl:grid-cols-3 mt-5">
+      <div>
+        <div class="box-about w-fit h-fit mx-auto p-2">
+          <img
+            src="../../public/Work/job.png"
+            class="img-work"
+            alt="work job"
+          />
+        </div>
+        <p class="mt-4">
+          <h1 class="text-center my-2 text-xl font-bold">
+            Full-Stack Software Engineer
+          </h1>
+          <h1 class="text-center px-4 mb-5">
+            <strong>Dwald Consulting (Software Consulting)</strong>
+            <br /> Dominican Republic - oct. 2023 - dic. 2023
+          </h1>
+        </p>
+      </div>
+
+      <div class="grid col-span-2 mb-5">
+        <ul class="border-x-4 border-black/80 rounded-lg px-5 mx-8 mr-10">
+          <li>
+            • According the business goals; I developed a new business entity
+            ensuring seamless integration. Using <strong>Asp.Net MVC</strong> with
+            <strong>Dependency Injection and Linq</strong>.
+          </li>
+          <li class="mt-2">
+            • Using <strong>UX/UI principles</strong>. I build <strong
+              >MVC controllers</strong
+            > and custom views to establish user trust with intuitive frontends.
+          </li>
+          <li class="mt-2">
+            • Worked with a team of Engineers to completely recreate our entire
+            site from scratch.
+          </li>
+          <li class="mt-2">
+            • Engaged directly with the business side i proposed <strong
+              >AutoMapper</strong
+            > to ensure <strong>clean and scalable code</strong>.
+          </li>
+          <li class="mt-2">
+            • Employed <strong
+              >Design Patterns, DTOs, and Fluent Validator</strong
+            > to enhance security of the app, on both the Front End and Back End
+            of the application.
+          </li>
+          <li class="mt-2">
+            • We employ <strong> database migrations</strong> to guarantee a seamless
+            transition.
+          </li>
+          <li class="mt-2">
+            • Version control was managed through <strong>Git and Github</strong
+            >, integrating
+            <strong>Jira</strong> for effective task management.
+          </li>
+          <li class="mt-2">
+            • Focusing on creating advanced technology solutions using <strong
+              >Asp.Net MVC for a growing startup called Dwald Consulting</strong
+            > from Dominican Republic, SFM.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .box-about {
+    background: linear-gradient(to bottom right, #020912dd, #272727);
+    color: rgba(255, 255, 255, 0.745);
+    box-shadow: 0px 0px 10px #353535b6;
+    border: solid 1px rgba(255, 255, 255, 0.863);
+    border-radius: 24px;
+  }
+
+  .img-work {
+    width: 200px;
+    border-radius: 24px;
+  }
+</style>

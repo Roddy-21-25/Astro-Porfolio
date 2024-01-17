@@ -1,0 +1,140 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <div class="box-about m-4 md:m-5 md:mx-10 rounded-xl p-8">
+      <h1 class="font-bold text-4xl mx-3 mb-5">About Me</h1>
+      <div class="grid grid-cols-1 xl:grid-cols-2">
+        <div class="flex justify-center my-auto">
+          <img
+            class="about-img"
+            src="../../public/About/aboutImg.png"
+            alt="img-about"
+          />
+        </div>
+        <div>
+          <h1 class="font-bold text-2xl my-2">Who am i?</h1>
+          <p>
+            I am <strong>Roddy R. Tejeda Rosario</strong>, a dedicated <strong
+              >Full Stack Engineer</strong
+            > with a passion for crafting seamless user experiences.
+            <br />
+            <br />
+            Focusing at solving complex problems with <strong
+              >JavaScript, React, Angular, Asp Net or Next.js</strong
+            > to build scalable and secure solutions that empower businesses and
+            instill trust in users through intuitive frontends.
+            <br />
+            <br />
+            Proficient in Testing With <strong
+              >Jest, React Testing Library</strong
+            > and <strong>Cypress</strong>.
+            <br />
+            <br />
+            Eager to contribute in a cooperative team, taking responsibility and
+            actively participating in team decisions while considering the business
+            goals.
+            <br />
+            <br />
+            Of Course, i speak <strong>Spanish and English.</strong>
+          </p>
+          <div class="grid grid-cols-1 justify-items-center my-5">
+            <div class="text-center bg-black/10 rounded-lg p-4">
+              <h1 class="text-3xl font-bold mb-2">Education</h1>
+              <h1 class="text-lg font-semibold">
+                Cybersecurity Technician - MACROSeguridad - MASEG
+              </h1>
+              <p>Dominican Republic - (15/3/2023 - 30/7/2023)</p>
+            </div>
+          </div>
+          <div class="flex justify-center mt-4">
+            <!-- //! Componente reutilizable -->
+            <nav class="grid grid-cols-3 gap-4">
+              <a
+                class="box-icon"
+                href="https://www.linkedin.com/in/roddy-2125-rafael/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="img-rrsr"
+                  src="../../public/Home/Social Media/linkedin (2).png"
+                  alt="Icon profile"
+                />
+              </a>
+              <a
+                class="box-icon"
+                href="mailto:roddy3889@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="img-rrsr"
+                  src="../../public/Home/Social Media/email.png"
+                  alt="Icon profile"
+                />
+              </a>
+              <a
+                class="box-icon"
+                href="https://github.com/Roddy-21-25"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="img-rrsr"
+                  src="../../public/Home/Social Media/github (1).png"
+                  alt="Icon profile"
+                />
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .box-about {
+    background: linear-gradient(to bottom right, #020912dd, #272727);
+    color: rgba(255, 255, 255, 0.745);
+    border: solid 2px rgba(255, 255, 255, 0.863);
+    box-shadow: 0px 0px 10px #353535b6;
+  }
+
+  .about-img {
+    width: 450px;
+    height: 400px;
+  }
+
+  @media (max-width: 768px) {
+    .about-img {
+      width: 90%;
+      height: auto;
+    }
+  }
+
+  .img-rrsr {
+    width: 25px;
+    height: auto;
+    opacity: 0.9;
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
+  }
+
+  .box-icon:hover .img-rrsr {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  .box-icon {
+    background: linear-gradient(to bottom right, #f3f4f547, #ffffff);
+    padding: 10px;
+    border-radius: 12px;
+    border: solid 1px rgba(255, 255, 255, 0.863);
+    box-shadow: 0px 0px 10px #ffffff2a;
+  }
+</style>

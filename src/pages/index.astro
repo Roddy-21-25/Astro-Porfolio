@@ -1,0 +1,153 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Home Page">
+  <main>
+    <div class="py-4">
+      <div class="grid grid-cols-1">
+        <div>
+          <div class="flex justify-center">
+            <img
+              class="img"
+              src="../../public/Home/profile.jpg"
+              alt="profile fotos"
+            />
+          </div>
+          <div class="text-center font-bold py-4">
+            <h1 class="text-xl md:text-3xl lg:text-3xl">
+              &lt; Roddy Rafael Tejeda Rosario /&gt;
+            </h1>
+            <h1
+              class="text-xl lg:text-xl mt-3 subtitle font-semibold w-fit mx-auto px-4 py-1 rounded-lg"
+            >
+              Full-Stack Software Engineer
+            </h1>
+          </div>
+          <div class="flex justify-center">
+            <!-- //! Componente reutilizable -->
+            <nav class="grid grid-cols-3 gap-4">
+              <a
+                class="box-icon"
+                href="https://www.linkedin.com/in/roddy-2125-rafael/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="img-rrsr"
+                  src="../../public/Home/Social Media/linkedin (2).png"
+                  alt="Icon profile"
+                />
+              </a>
+              <a
+                class="box-icon"
+                href="mailto:roddy3889@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="img-rrsr"
+                  src="../../public/Home/Social Media/email.png"
+                  alt="Icon profile"
+                />
+              </a>
+              <a
+                class="box-icon"
+                href="https://github.com/Roddy-21-25"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="img-rrsr"
+                  src="../../public/Home/Social Media/github (1).png"
+                  alt="Icon profile"
+                />
+              </a>
+            </nav>
+          </div>
+          <div class="text-center my-3">
+            <a
+              href="../../public/Home/Roddy Full Stack.pdf"
+              download="Roddy Full Stack"
+            >
+              <div class="flex justify-center my-2 download-btn w-fit mx-auto">
+                <img
+                  class="cv-icon"
+                  src="../../public/Home/Social Media/archivo.png"
+                  alt="Icon de descarga"
+                />
+                <span class="ml-3 font-bold text-md">Download CV</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: solid 1px white;
+    box-shadow: 0px 0px 10px #0e407e2a;
+  }
+  @media (max-width: 768px) {
+    .img {
+      width: 60%;
+    }
+  }
+
+  .img-rrsr {
+    width: 25px;
+    height: auto;
+    opacity: 0.9;
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
+  }
+
+  .box-icon:hover .img-rrsr {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  .box-icon {
+    background: linear-gradient(to bottom right, #0e407e20, #ffffff);
+    padding: 10px;
+    border-radius: 12px;
+    border: solid 1px rgba(255, 255, 255, 0.863);
+    box-shadow: 0px 0px 10px #0e407e2a;
+  }
+
+  .subtitle {
+    background-color: #1e2125dc;
+    color: white;
+  }
+
+  .cv-icon {
+    width: 30px;
+    height: auto;
+  }
+
+  .download-btn {
+    background: linear-gradient(to bottom right, #0e407e20, #ffffff);
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px;
+    border: solid 1px rgba(255, 255, 255, 0.863);
+    box-shadow: 0px 0px 10px #0e407e2a;
+    transition: all 0.3s ease;
+  }
+
+  .cv-icon {
+    transition: all 0.3s ease;
+  }
+
+  .download-btn:hover .cv-icon {
+    margin-right: 10px;
+  }
+</style>

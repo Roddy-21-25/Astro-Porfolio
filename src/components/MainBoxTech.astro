@@ -1,0 +1,38 @@
+---
+import BoxTech from "../components/BoxTech.astro";
+
+interface TechInfo {
+  text: string;
+  src: string;
+}
+
+interface Props {
+  title: string;
+  Array: TechInfo[];
+  grid: string;
+  styleSize: string;
+}
+
+const { title, Array, grid, styleSize } = Astro.props;
+---
+
+<div class="mt-3">
+  <h1 class="tech-header text-2xl font-bold w-fit pb-1">{title}</h1>
+  <div class={`${grid} gap-4 p-4`}>
+    {
+      Array.map((info: TechInfo) => (
+        <BoxTech
+          style={`${styleSize} flex justify-center`}
+          text={info.text}
+          src={info.src}
+        />
+      ))
+    }
+  </div>
+</div>
+<style>
+  .tech-header {
+    border-bottom: solid 6px #1e2125ba;
+    border-radius: 6px;
+  }
+</style>
