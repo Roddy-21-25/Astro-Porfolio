@@ -2,26 +2,32 @@
 interface Props {
   text: string;
   src: string;
-  style: string
+  style: string;
+  check: boolean;
 }
 
-const { text, src, style } = Astro.props;
+const { text, src, style, check } = Astro.props;
 ---
 
 <div class={`box-tech ${style} py-1 rounded-xl`}>
   <div class="">
     <img
-      class="tech-img mx-auto"
+      class=`${check ? 'tech-img' : 'tech-imgAWS'} mx-auto`
       src={`${src}`}
       alt="icon-language"
     />
-    <h1 class="text-xl font-bold my-auto">{text}</h1>
+    <h1 class="text-lg text-center font-bold my-auto">{text}</h1>
   </div>
 </div>
 
 <style>
   .tech-img {
     width: 30px;
+    height: auto;
+  }
+
+  .tech-imgAWS {
+    width: 90px;
     height: auto;
   }
 

@@ -1,4 +1,4 @@
-export const titleData = ["Languages", "Testing", "Front End", "Back End"];
+export const titleData = ["Languages", "Testing", "Front End", "Back End", "Cloud"];
 
 export const languajeData = [
   {
@@ -97,5 +97,32 @@ export const TestingData = [
   {
     text: "Cypress",
     src: "/TechStack/b (9).png",
+  },
+];
+
+export const CloudData = [
+  {
+    text: "AWS",
+    src: "/TechStack/b (24).png",
+  },
+  {
+    text: "AWS EC2",
+    src: "/TechStack/b (25).png",
+  },
+  {
+    text: "AWS RDS",
+    src: "/TechStack/b (26).webp",
+  },
+  {
+    text: "AWS S3",
+    src: "/TechStack/b (27).png",
+  },
+  {
+    text: "AWS IAM",
+    src: "/TechStack/b (28).png",
+  },
+  {
+    text: "AWS LAMNDA",
+    src: "/TechStack/b (29).png",
   },
 ];

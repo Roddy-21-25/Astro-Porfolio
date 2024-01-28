@@ -5,6 +5,7 @@ import {
   BackEndData,
   TestingData,
   titleData,
+  CloudData,
 } from "../data/languajeData.js";
 import MainBoxTech from "../components/MainBoxTech.astro";
 import Layout from "../layouts/Layout.astro";
@@ -13,12 +14,15 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="My Skills">
   <main>
     <div>
-      <h1 class="text-center text-2xl md:text-5xl font-bold">Welcome to my Skills Section</h1>
+      <h1 class="text-center text-2xl md:text-5xl font-bold">
+        Welcome to my Skills Section
+      </h1>
     </div>
     <div class="p-6">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <!-- Languages -->
         <MainBoxTech
+          check={true}
           styleSize={`w-32`}
           grid={`grid grid-cols-2 sm:grid-cols-4 md:grid-cols-2 xl:grid-cols-4 pb-1`}
           title={titleData[0]}
@@ -26,6 +30,7 @@ import Layout from "../layouts/Layout.astro";
         />
         <!-- Testing -->
         <MainBoxTech
+          check={true}
           styleSize={`md:w-44`}
           grid={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 xl:grid-cols-3 pb-2`}
           title={titleData[1]}
@@ -33,6 +38,7 @@ import Layout from "../layouts/Layout.astro";
         />
         <!-- Fron End -->
         <MainBoxTech
+          check={true}
           styleSize={`w-28`}
           grid={`grid grid-cols-2 sm:grid-cols-4 md:grid-cols-2 xl:grid-cols-4 p-4`}
           title={titleData[2]}
@@ -40,10 +46,19 @@ import Layout from "../layouts/Layout.astro";
         />
         <!-- Back End -->
         <MainBoxTech
+          check={true}
           styleSize={`w-32`}
           grid={`grid grid-cols-2 sm:grid-cols-4 md:grid-cols-2 xl:grid-cols-4 p-4`}
           title={titleData[3]}
           Array={BackEndData}
+        />
+        <!-- Cloud -->
+        <MainBoxTech
+          check={false}
+          styleSize={`w-40`}
+          grid={`grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 xl:grid-cols-3 p-4`}
+          title={titleData[4]}
+          Array={CloudData}
         />
       </div>
     </div>

@@ -11,9 +11,10 @@ interface Props {
   Array: TechInfo[];
   grid: string;
   styleSize: string;
+  check: boolean;
 }
 
-const { title, Array, grid, styleSize } = Astro.props;
+const { title, Array, grid, styleSize, check } = Astro.props;
 ---
 
 <div class="mt-3">
@@ -22,6 +23,7 @@ const { title, Array, grid, styleSize } = Astro.props;
     {
       Array.map((info: TechInfo) => (
         <BoxTech
+          check={check}
           style={`${styleSize} flex justify-center`}
           text={info.text}
           src={info.src}
