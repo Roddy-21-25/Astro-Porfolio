@@ -1,0 +1,48 @@
+---
+interface Props {
+  title: string;
+  href: string;
+  downloadText: string;
+}
+
+const { title, href, downloadText } = Astro.props;
+---
+
+<div class={`text-center my-3 ${title === "CV - English Version" ? "sm:grid justify-items-end" : "sm:grid justify-items-start"}`}>
+  <a href={href} download={downloadText}>
+    <div class="flex justify-center my-2 download-btn w-fit mx-auto">
+      <img
+        class="cv-icon"
+        src="/Social Media/archivo.png"
+        alt="Icon de descarga"
+      />
+      <span class="ml-3 font-bold text-md">{title}</span>
+    </div>
+  </a>
+</div>
+
+<style>
+  .cv-icon {
+    width: 30px;
+    height: auto;
+  }
+
+  .download-btn {
+    background: linear-gradient(to bottom right, #0e407e20, #ffffff);
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px;
+    border: solid 1px rgba(255, 255, 255, 0.863);
+    box-shadow: 0px 0px 10px #0e407e2a;
+    transition: all 0.3s ease;
+  }
+
+  .cv-icon {
+    transition: all 0.3s ease;
+  }
+
+  .download-btn:hover .cv-icon {
+    margin-right: 10px;
+  }
+</style>
